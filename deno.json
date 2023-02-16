@@ -1,0 +1,19 @@
+{
+
+	"lock": false,
+
+	"imports": {
+		"./": "./",
+		"/": "./",
+		"std/": "https://deno.land/std/",
+		"x/": "https://deno.land/x/"
+	},
+
+	"tasks": {
+		"dev": "deno run -A ./app/deployment.js --dev",
+		"prod": "deno run -A ./app/deployment.js --prod",
+		"deploy": "deno run -A ./app/deploy.js",
+		"test": "deno run -A ./app/test.js"
+	}
+
+}
